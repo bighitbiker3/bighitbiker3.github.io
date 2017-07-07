@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  height: calc(6 * 125vh); }
+
+p, a, h1, h2, h3, h4, h5, h6 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: 100;
+  line-height: 2; }
+
+#app {
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    color: black;
+    text-decoration: none; }
+  a:visited {
+    color: black;
+    text-decoration: none; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+.header {
+  font-size: 5em; }
+
+.logo-left {
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 20px;
+  top: 0; }
+
+.logo-right {
+  z-index: 100;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  right: 20px;
+  top: 0;
+  transform: scale(-1, 1);
+  cursor: w-resize; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 25px 0 25px;
+  border-color: #000000 transparent transparent transparent; }
+
+.page-header {
+  border: none;
+  text-align: center;
+  padding-top: 0px;
+  font-size: 1.8em;
+  margin: none;
+  line-height: 15px;
+  text-decoration: underline; }
+
+.curtainList {
+  text-align: center; }
+
+.curtain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateZ(0);
+  background-color: white;
+  box-shadow: 0px 2px 12px -1px rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  width: 100vw; }
+  .curtain .intro-text-div {
+    margin-top: 0px;
+    cursor: pointer; }
+  .curtain .intro-text {
+    font-size: 30px;
+    margin-left: 20%;
+    margin-right: 20%; }
+  .curtain iframe {
+    margin-top: 20px; }
+
+.month {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  text-transform: uppercase; }
+
+.year {
+  text-transform: uppercase;
+  display: inline-block;
+  position: absolute;
+  right: 20px; }
+
+.footer {
+  position: absolute;
+  left: 0px;
+  bottom: 40px;
+  width: 100%;
+  height: auto; }
+
+.image-div {
+  margin-top: 50px;
+  cursor: pointer; }
+
+.portfolioImage {
+  width: 70%;
+  z-index: 0; }
+
+.techOverlay {
+  position: absolute;
+  z-index: 100;
+  height: 100%;
+  width: 70%;
+  top: 0%;
+  left: 15%;
+  display: flex;
+  align-items: center;
+  background-color: blue;
+  text-align: center;
+  color: hotpink; }
+  .techOverlay .page-header-overlay {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center; }
+    .techOverlay .page-header-overlay h1 {
+      font-size: 22px; }
+      .techOverlay .page-header-overlay h1 u {
+        display: inline-block;
+        line-height: 1.2em;
+        text-decoration: none;
+        border-bottom: 1px solid white; }
+  .techOverlay .techOverlay-text {
+    text-transform: uppercase;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 2em;
+    color: hotpink; }
+  .techOverlay .techOverlay-links {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    width: 100%;
+    vertical-align: bottom; }
+    .techOverlay .techOverlay-links a {
+      height: 15px;
+      margin-bottom: 10px;
+      display: inline-block; }
+      .techOverlay .techOverlay-links a:first-child {
+        float: left;
+        bottom: 0;
+        margin-left: 10px; }
+      .techOverlay .techOverlay-links a:last-child {
+        float: right;
+        margin-right: 10px; }
+  .techOverlay h1 {
+    font-size: 2em;
+    margin-bottom: 30px; }
+  .techOverlay p {
+    color: hotpink;
+    font-size: 14px;
+    margin-bottom: 30px; }
+
+.logo {
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0; }
+
+.logo h1 {
+  font-size: 69px;
+  margin: 0;
+  padding: 0; }
+
+#bodyDiv {
+  text-align: center;
+  position: fixed;
+  margin-top: 50px;
+  z-index: 0; }
+
+.portfolioTitle {
+  position: relative;
+  padding-top: 5px; }
+
+.imageHover {
+  position: absolute;
+  height: 95%;
+  width: 70%;
+  top: 5%;
+  left: 15%;
+  background-color: rgba(0, 0, 0, 0.99);
+  text-align: left; }
+
+.techTextTitle {
+  color: white;
+  margin-top: 10%;
+  margin-left: 10px; }
+
+#footerArrow {
+  transform: translateZ(0);
+  background-color: white;
+  position: fixed;
+  top: 20px;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  width: 100%; }
+
+#footerArrow h2 {
+  font-size: 69px;
+  margin: 0;
+  padding: 0; }
+
+.pleaseRotate {
+  display: none; }
+
+@media (max-width: 650px) {
+  .header {
+    font-size: 4em; }
+  .curtain .intro-text {
+    font-size: 20px; }
+  .techOverlay {
+    height: 70%;
+    top: 15%; }
+    .techOverlay .techOverlay-text {
+      padding-left: 10px;
+      padding-right: 10px; }
+    .techOverlay h1 {
+      font-size: 15px; }
+    .techOverlay p {
+      font-size: 10px; } }
