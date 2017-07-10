@@ -1,6 +1,4 @@
-
 import React from 'react'
-import ReactDOM from 'react-dom'
 import CurtainList from './CurtainList'
 import Header from './Header';
 import Words from './Words';
@@ -24,7 +22,7 @@ class App extends React.Component{
 
   componentDidMount() {
     this.setState({windowWidth: window.outerWidth})
-    document.addEventListener('resize', () => {
+    window.addEventListener('resize', () => {
       this.setState({windowWidth: window.outerWidth})
     })
   }
@@ -38,9 +36,10 @@ class App extends React.Component{
   }
 
   renderPortfolio() {
-    return portfolioArray.map((obj) => {
+    return portfolioArray.map((obj, i) => {
       return (
         <Portfolio 
+          key={i}
           image={obj.image}
           title={obj.title}
           month={obj.month}

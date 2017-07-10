@@ -17,7 +17,7 @@ class TechOverlay extends React.Component{
         </div>
         <div className="techOverlay-links">
           {this.props.tech.links[0].indexOf('http') > -1 ? <a href={this.props.tech.links[0]}><p>GitHub</p></a> : <a><p>{this.props.tech.links[0]}</p></a>}
-          <a href={this.props.tech.links[1]} target="_blank"><p>{this.props.title}</p></a>
+          <a href={this.props.tech.links[1]} target="_blank" rel="noopener noreferrer"><p>{this.props.title}</p></a>
         </div>
       </div>
     )

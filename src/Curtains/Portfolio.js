@@ -1,7 +1,6 @@
 import React from 'react'
 import TechOverlay from './TechOverlay'
 import cx from 'classnames';
-var transformYVal;
 
 class PortfolioCurtain extends React.Component{
   constructor(props, context){

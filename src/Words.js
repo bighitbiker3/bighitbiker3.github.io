@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import cx from 'classnames'
+import PlayerWrapper from './Music/PlayerWrapper';
 
 
 class Words extends Component {
@@ -7,11 +8,10 @@ class Words extends Component {
     const { toggleWords, wordsOpen, teaseWords } = this.props;
     return (
       <div
-        onClick={toggleWords}
         className={cx('words-wrapper ', wordsOpen && 'words-open', teaseWords && !wordsOpen && 'words-tease')}
       >
-        <div className='words-title' data-text='Words'>Idk</div>
-        <h1><a>Music</a></h1>
+        <div onClick={toggleWords} className='words-title' data-text='Words'>idk</div>
+        <PlayerWrapper />
       </div>
     );
   }

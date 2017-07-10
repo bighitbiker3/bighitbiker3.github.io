@@ -7,7 +7,6 @@
   z-index: 1000;
   padding-top: 30px;
   overflow: auto;
-  cursor: e-resize;
   transition: right .3s linear;
 }
 
@@ -17,6 +16,8 @@
   text-decoration: underline;
   font-style: italic;
   color: blue;
+  cursor: e-resize;
+  margin-bottom: 20px;
 
   // @include textGlitch("example-one", 17, blue, hotpink, red, yellow, 600, 170);
 }

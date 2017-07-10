@@ -7,7 +7,6 @@
   z-index: 1000;
   padding-top: 30px;
   overflow: auto;
-  cursor: e-resize;
   transition: right .3s linear; }
 
 .words-title {
@@ -15,7 +14,9 @@
   text-align: center;
   text-decoration: underline;
   font-style: italic;
-  color: blue; }
+  color: blue;
+  cursor: e-resize;
+  margin-bottom: 20px; }
 
 .words-open {
   right: 0 !important;

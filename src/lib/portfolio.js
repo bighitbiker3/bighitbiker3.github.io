@@ -1,7 +1,6 @@
 import thatsHot from '../images/thatsHotFinal.png'
 import cryptoPass from '../images/cryptoPassFinal.png'
 import mesh from '../images/meshFinal.png'
-import ptb from '../images/ptbFinal.png'
 import queueThat from '../images/queueThatFinal.png'
 
 export default [
